@@ -4,15 +4,30 @@
     width: 980px;
 }
 
+@mixin top-grid {
+    position: relative;
+    top: 60px;
+}
+
+@mixin centro {
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex {
+    display: flex;
+}
+
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    border: 1px solid red;
+    // border: 1px solid red;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 
 
 .container {
@@ -24,6 +39,8 @@
 
 .navbar {
 
+    @include flex;
+    @include centro;
     @include tamanho-tela;
     background-color: black;
     color: white;
@@ -31,12 +48,13 @@
     position: fixed;
     top: 0;
     z-index: 1;
+    
+
 
     ul {
-        display: flex; 
+        @include flex;
         justify-content: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        align-items: center;
     }
 
     &__link {
@@ -53,9 +71,10 @@
 
 .artigos {
 
-    position: relative;
-    top: 60px;
+    @include top-grid;
+    height: 580px;
     border: 1px solid #bbb;
+    border-bottom: 0;
 
     &__artigo {
 
@@ -70,5 +89,11 @@
 }
 
 .footer {
+    @include flex;
+    @include top-grid;
+    @include centro;
+    height: 80px;
     border: 1px solid #bbb;
+    background-color: black;
+    color: white
 }
