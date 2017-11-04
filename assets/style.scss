@@ -58,6 +58,7 @@ body {
 .container {
     @include flexbox-col;
     @include flex-content-between;
+
     height: inherit;
 }
 
@@ -65,7 +66,7 @@ body {
 
     @include flexbox-row;
     @include flex-content-center;
-    // height: 60px;
+
     padding: 15px;
     background-color: black;
     color: white;
