@@ -29,7 +29,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 60px;
+  padding: 15px;
   background-color: black;
   color: white;
   position: fixed;
@@ -45,10 +45,14 @@ body {
     color: aqua; }
 
 .artigos {
-  margin: 50px 0 0 0; }
+  margin: 70px 0 0 0; }
   .artigos__artigo {
     text-align: justify;
-    padding: 10px; }
+    padding: 5px 10px 10px; }
+    .artigos__artigo h1 {
+      margin: 0 0 10px; }
+  .artigos hr {
+    margin: 10px 0 10px; }
 
 .footer {
   display: flex;
