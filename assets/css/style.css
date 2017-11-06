@@ -11,6 +11,9 @@
 a:visited {
   color: unset; }
 
+a {
+  display: block; }
+
 html {
   height: 100%; }
 
@@ -29,7 +32,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 15px;
   background-color: black;
   color: white;
   position: fixed;
@@ -41,8 +43,21 @@ body {
     justify-content: space-around;
     align-items: center;
     width: 100%; }
-  .navbar__link:hover {
-    color: aqua; }
+  .navbar__link, .navbar__link--active {
+    padding: 15px 5px 15px 5px;
+    width: 85px;
+    text-align: center; }
+    .navbar__link:hover, .navbar__link--active:hover {
+      background: #222; }
+    .navbar__link--active {
+      background: #1441a0 !important; }
+      .navbar__link--active:before {
+        position: absolute;
+        bottom: -0.9em;
+        margin: 0 1em 0 1em;
+        content: '';
+        border: 7px solid transparent;
+        border-top: 7px solid #1441a0; }
 
 .artigos {
   margin: 70px 0 0 0; }
