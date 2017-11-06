@@ -20,12 +20,7 @@ a {
 /*=========================
    COLORS PALLET
 =========================*/
-html {
-  height: 100%; }
-
-body {
-  display: flex;
-  flex-direction: column;
+html, body {
   height: 100%; }
 
 .container {
@@ -63,7 +58,7 @@ body {
         margin: 0 1em 0 1em;
         content: '';
         border: 7px solid transparent;
-        border-top: 7px solid #1441a0; }
+        border-top-color: #1441a0; }
 
 .articles {
   margin: 70px 0 0 0; }
@@ -82,5 +77,4 @@ body {
   align-items: center;
   background-color: black;
   color: white;
-  width: 100%;
   padding: 50px; }

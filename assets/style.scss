@@ -25,6 +25,7 @@ a {
 =========================*/
 
 $color-black: black;
+$color-gray: #222;
 $color-blue: #1441a0;
 $color-white: white;
 
@@ -57,12 +58,7 @@ $color-white: white;
   justify-content: space-between;
 }
 
-html {
-  height: 100%;
-}
-
-body {
-  @include flexbox-col;
+html,body {
   height: 100%;
 }
 
@@ -97,7 +93,7 @@ body {
     text-align: center;
 
     &:hover {
-      background: #222;
+      background: $color-gray;
     }
 
     &--active {
@@ -109,7 +105,7 @@ body {
         margin: 0 1em 0 1em;
         content: '';
         border: 7px solid transparent;
-        border-top: 7px solid $color-blue;
+        border-top-color: $color-blue;
       }
     }
   }
@@ -139,6 +135,5 @@ body {
   @include flex-content-central;
   background-color: $color-black;
   color: $color-white;
-  width: 100%;
   padding: 50px;
 }
