@@ -1,6 +1,6 @@
-//==========================
-//   RESET DEFAULT
-//==========================
+/*==========================
+  RESET DEFAULT
+==========================*/
 * {
   margin: 0;
   padding:  0;
@@ -20,8 +20,15 @@ a {
 }
 //==========================
 
+/*=========================
+   COLORS PALLET
+=========================*/
 
+$color-black: black;
+$color-blue: #1441a0;
+$color-white: white;
 
+//========================
 @mixin flexbox-row {
   display: flex;
   flex-direction: row;
@@ -71,8 +78,8 @@ body {
   @include flexbox-row;
   @include flex-content-center;
 
-  background-color: black;
-  color: white;
+  background-color: $color-black;
+  color: $color-white;
   position: fixed;
   width: 100%;
   top: 0;
@@ -95,14 +102,14 @@ body {
 
     &--active {
       @extend .navbar__link;
-      background: #1441a0 !important;
+      background: $color-blue !important;
       &:before {
         position: absolute;
         bottom: -0.9em;
         margin: 0 1em 0 1em;
         content: '';
         border: 7px solid transparent;
-        border-top: 7px solid #1441a0;
+        border-top: 7px solid $color-blue;
       }
     }
   }
@@ -130,8 +137,8 @@ body {
 .footer {
   @include flexbox-row;
   @include flex-content-central;
-  background-color: black;
-  color: white;
+  background-color: $color-black;
+  color: $color-white;
   width: 100%;
   padding: 50px;
 }
