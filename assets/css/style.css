@@ -59,14 +59,14 @@ body {
         border: 7px solid transparent;
         border-top: 7px solid #1441a0; }
 
-.artigos {
+.articles {
   margin: 70px 0 0 0; }
-  .artigos__artigo {
+  .articles__article {
     text-align: justify;
     padding: 5px 10px 10px; }
-    .artigos__artigo h1 {
+    .articles__article h1 {
       margin: 0 0 10px; }
-  .artigos hr {
+  .articles hr {
     margin: 10px 0 10px; }
 
 .footer {

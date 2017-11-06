@@ -17,21 +17,21 @@
                 <a href="#home" class="navbar__link--active">Home</a>
             </li>
             <li>
-                <a href="#artigo1" class="navbar__link">Artigo 1</a>
+                <a href="#article1" class="navbar__link">Artigo 1</a>
             </li>
             <li>
-                <a href="#artigo2" class="navbar__link">Artigo 2</a>
+                <a href="#article2" class="navbar__link">Artigo 2</a>
             </li>
             <li>
-                <a href="#artigo3" class="navbar__link">Artigo 3</a>
+                <a href="#article3" class="navbar__link">Artigo 3</a>
             </li>
         </ul>
     </nav>
     <hr>
     <!-- SEÇÃO DE ARTIGOS -->
-    <section class="artigos">
+    <section class="articles">
         <!-- ARTIGO 1 -->
-        <article class="artigos__artigo">
+        <article class="articles__article">
             <h1>ARTIGO 1</h1>
             Magna ut elit laborum culpa reprehenderit laborum fugiat proident sunt est sunt. Pariatur aliquip exercitation est duis duis
             tempor consequat eu officia aliqua. Enim sunt et sint anim nisi aliquip eu laboris sunt voluptate labore
@@ -45,7 +45,7 @@
             <hr>
         </article>
         <!--ARTIGO 2-->
-        <article class="artigos__artigo">
+        <article class="articles__article">
             <h1>ARTIGO 2</h1>
             Magna ut elit laborum culpa reprehenderit laborum fugiat proident sunt est sunt. Pariatur aliquip exercitation est duis duis
             tempor consequat eu officia aliqua. Enim sunt et sint anim nisi aliquip eu laboris sunt voluptate labore
@@ -59,7 +59,7 @@
             <hr>
         </article>
         <!-- ARTIGO 2 -->
-        <article class="artigos__artigo">
+        <article class="articles__article">
             <h1>ARTIGO 3</h1>
             Magna ut elit laborum culpa reprehenderit laborum fugiat proident sunt est sunt. Pariatur aliquip exercitation est duis duis
             tempor consequat eu officia aliqua. Enim sunt et sint anim nisi aliquip eu laboris sunt voluptate labore
@@ -99,7 +99,7 @@
 
         function setArticle(element) {
             var textLink = element.srcElement.innerText;
-            var articles = getElement('artigos');
+            var articles = getElement('articles');
             var articleArray = Array.from(articles.children);
 
             toggleArticles('none');
